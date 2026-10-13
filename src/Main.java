@@ -5,7 +5,6 @@ public class Main {
         Application app1 = new Application(victorianFactory);
         app1.useFurniture();
 
-        System.out.println();
 
         System.out.println("--- Заказ Модерн мебели ---");
         FurnitureFactory modernFactory = new ModernFurnitureFactory();
@@ -20,7 +19,6 @@ class Application {
     private CoffeeTable coffeeTable;
 
     public Application(FurnitureFactory factory) {
-        // Создаем целое семейство продуктов через одну фабрику
         chair = factory.createChair();
         sofa = factory.createSofa();
         coffeeTable = factory.createCoffeeTable();
