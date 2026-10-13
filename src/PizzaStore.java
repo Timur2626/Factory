@@ -10,15 +10,6 @@ public class PizzaStore {
 
         pizza = factory.createPizza(type);
 
-        if (pizza != null) {
-            pizza.prepare();
-            pizza.bake();
-            pizza.cut();
-            pizza.box();
-        } else {
-            System.out.println("Извините, такой пиццы нет.");
-        }
-
         return pizza;
     }
 }
